@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prueba - Animales Salvajes</title>
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0ccfd47fc7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/estilos.css" />
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-12 card col-sm-7 text-center p-4 bg-warning shadow-lg" id="Tabla">
+      <h3>Animales en investigación</h3>
+      <hr class="my-0 bg-dark w-75 mx-auto" />
+
+      <div id="Animales" class="my-3 p-3 d-flex align-items-start justify-content-start flex-wrap bg-dark">
+        <!-- Aqui van los cuadros-->
+      </div>
+    </div>
+    <div class="card col-12 col-sm-4 bg-warning text-dark offset-1 shadow-lg">
+      <div class="card-body">
+        <h5 class="card-title">Registrar animal en:</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          Ingrese los datos del animal
+        </h6>
+        <hr />
+        <div class="card-text my-3">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Nombre del animal:</label>
+            <select class="form-control bg-dark text-white" id="animal">
+              <option disabled selected>Seleccione un animal</option>
+              <option value="Leon">León</option>
+              <option value="Lobo">Lobo</option>
+              <option value="Oso">Oso</option>
+              <option value="Serpiente">Serpiente</option>
+              <option value="Aguila">Águila</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Años de edad estimados:</label>
+            <select class="form-control bg-dark text-white" id="edad">
+              <option disabled selected>Seleccione un rango de años</option>
+
+              <option value="0 - 1 años">0 - 1 años</option>
+              <option value="1 - 3 años">1 - 3 años</option>
+              <option value="3 - 5 años">3 - 5 años</option>
+              <option value="5 - 8 años">5 - 8 años</option>
+              <option value="8 - 10 años">8 - 10 años</option>
+              <option value="Más de 10 años">Más de 10 años</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Comentarios:</label>
+            <textarea rows="5" class="form-control shadow-lg bg-dark text-white" id="comentarios"></textarea>
+          </div>
+
+          <div class="p-5 card bg-dark">
+            <div id="preview"></div>
+
+          </div>
+        </div>
+
+        <!-- <btn class="btn btn-light d-block" data-toggle="modal" data-target="#exampleModal" id="btnRegistrar">Agregar</btn>-->
+        <btn class="btn btn-light d-block" id="btnRegistrar">Agregar</btn>
+      </div>
+    </div>
+  </div>
+  <!-- Aqui va el audio-->
+  <audio id="player" class="d-none"></audio>
+
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered w-25" >
+      <div class="modal-content bg-dark">
+        <div class="modal-body">...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/Imagenes.js"></script>
+</body>
+
+</html>
