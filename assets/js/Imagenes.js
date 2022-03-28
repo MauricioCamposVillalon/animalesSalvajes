@@ -20,7 +20,5 @@ seleccionAnimal.addEventListener('click', async (event) => {
         let audio = document.querySelector('#player');
         audio.innerHTML = sonidoScr;
     }
-
-
 });
 

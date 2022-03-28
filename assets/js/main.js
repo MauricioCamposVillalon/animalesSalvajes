@@ -99,18 +99,11 @@ document.getElementById("btnRegistrar").addEventListener("click", async (e) => {
     }
 
 
-
-
-
 });
 
 const reloadTable = () => {
     const animalesTemplate = document.getElementById("Animales");
-    // const animalesModal = document.getElementById("exampleModal");
     animalesTemplate.innerHTML = "";
-    //  animalesModal.innerHTML = "";
-    let arreg = [];
-
     animalesSeleccion.forEach((p, i) => {
         animalesTemplate.innerHTML += `
         <div class = "px-3 pb-2 participante" data-fighter="${p.getNombre()}" >
@@ -127,16 +120,10 @@ const reloadTable = () => {
 };
 
 
-
-
-
-
 window.playAudio = (audio) => {
-
     const sonido2 = `<audio id="player" class="d-none" src="/assets/sounds/${audio}" autoplay></audio>`;
     let audio2 = document.querySelector('#player');
     audio2.innerHTML = sonido2;
-
     reloadTable();
 }
 
