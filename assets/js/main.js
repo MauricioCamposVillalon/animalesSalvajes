@@ -134,19 +134,14 @@ window.modal = (indice) => {
     const imagenSrc = ` 
     <div class="modal-dialog modal-dialog-centered w-25" >
         <div class="modal-content bg-dark">
-            <div class="modal-header">
-                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body ">
-                <div class="card border-dark" style="width: 20rem;">
-                    <img  class="imagenan p-1" src="/assets/imgs/${nomb.getImg()}"/>
-                    <div class="card-body bg-dark border-dark">
-                        <h6 class="font-weight-bold text-center text-white p-1">${nomb.getEdad()}</h6>
-                        <h6 class="font-weight-bolder text-center text-white font-weight-bold">Comentarios</h6><hr>
-                        <p class="card-text text-white">${nomb.getComentarios()}</p>
-                    </div>
-                </div>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+            <img  class="imagenan p-1 text-center" src="/assets/imgs/${nomb.getImg()}"/>
+            <h6 class="font-weight-bold text-center text-white p-1">${nomb.getEdad()}</h6>
+            <h6 class="font-weight-bolder text-center text-white font-weight-bold">Comentarios</h6><hr>
+            <p class="text-center p-1 text-white">${nomb.getComentarios()}</p>
+            <div class="modal-body modal-dialog-centered">
+            <div class="text-center>
             </div>
         </div>
     </div>`;
